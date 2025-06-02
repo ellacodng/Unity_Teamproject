@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using UnityEngine;
 
 public class EnemyHeadTrigger : MonoBehaviour
@@ -21,3 +22,28 @@ public class EnemyHeadTrigger : MonoBehaviour
         }
     }
 }
+=======
+using UnityEngine;
+
+public class EnemyHeadTrigger : MonoBehaviour
+{
+    public EnemyPatrol enemy;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
+            {
+                
+                if (playerRb.linearVelocity.y < 0f)
+                {
+                    enemy.Die(); 
+                    playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, 10f); // 반동 점프
+                }
+            }
+        }
+    }
+}
+>>>>>>> 62f7170fb01ff4ca790abc9d41de3db2dee18e65

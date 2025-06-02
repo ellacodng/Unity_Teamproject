@@ -1,0 +1,30 @@
+<<<<<<< HEAD
+﻿{
+  "projectFileVersion": 3,
+  "sourceFiles": [
+    "**/*.yarn"
+  ],
+  "excludeFiles": [
+    "**/*~/*",
+    "./Samples/Yarn Spinner*/*"
+  ],
+  "localisation": {},
+  "baseLanguage": "ko",
+  "compilerOptions": {},
+  "definitionsFiles": []
+=======
+﻿{
+  "projectFileVersion": 3,
+  "sourceFiles": [
+    "**/*.yarn"
+  ],
+  "excludeFiles": [
+    "**/*~/*",
+    "./Samples/Yarn Spinner*/*"
+  ],
+  "localisation": {},
+  "baseLanguage": "ko",
+  "compilerOptions": {},
+  "definitionsFiles": []
+>>>>>>> 62f7170fb01ff4ca790abc9d41de3db2dee18e65
+}
